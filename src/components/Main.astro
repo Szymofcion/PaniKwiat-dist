@@ -1,0 +1,1669 @@
+---
+import "swiper/css";
+import "swiper/css/navigation";
+import { normalizeLang, siteCopy, type SiteLang } from "../i18n/site";
+
+const lang = normalizeLang(Astro.props.lang as SiteLang);
+const copy = siteCopy[lang];
+const mainCopy = copy.main;
+const [section1, section2, section3, section4] = mainCopy.sections;
+const { contactForm } = copy;
+---
+
+<div class="container">
+    <h2>{mainCopy.title}</h2>
+</div>
+<div class="container" data-astro-cid-ivdev4kk="">
+    <div class="offer" data-astro-cid-ivdev4kk="">
+        <div class="wrapper-container" data-astro-cid-ivdev4kk="">
+            <div class="wrapper" data-astro-cid-ivdev4kk="">
+                <h3 data-astro-cid-ivdev4kk="">
+                    <span data-astro-cid-ivdev4kk="">{section1.numeral}</span>
+                    {section1.heading}
+                </h3>
+                <p data-astro-cid-ivdev4kk="">{section1.body}</p>
+            </div>
+            <div class="wrapper-image" data-astro-cid-ivdev4kk="">
+                <img
+                    src="/slubne/dekoracje.jpg"
+                    decoding="async"
+                    loading="lazy"
+                    alt=""
+                    data-astro-cid-ivdev4kk=""
+                    width="700"
+                    height="700"
+                />
+            </div>
+        </div>
+        <div class="card-wrapper" data-astro-cid-ivdev4kk="">
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <!-- swiper bukiety slubne  -->
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/slubne/bukiety.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="300"
+                        height="300"
+                    />
+                    <div class="box box-bukietyslubne" data-astro-cid-ivdev4kk="">
+                        <button class="btn-modal" onclick="window.bukietyslubne.showModal()" data-astro-cid-qmzm2soj="">
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="bukietyslubne" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide swiper-slide-prev"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide swiper-slide-active"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/3.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide swiper-slide-next"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/4.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/5.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/6.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/7.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/8.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/9.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/10.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/11.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/12.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/13.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/14.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/15.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/16.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/17.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/18.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/19.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div
+                                            data-lg-size="200-200"
+                                            class="swiper-slide"
+                                            data-astro-cid-ivdev4kk=""
+                                            style="width: 1106px;"
+                                        >
+                                            <img
+                                                src="/galeria/dekoracje-slubne/bukiety-slubne/20.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section1.cards[0]}</h3>
+                <!-- koniec swiper -->
+            </div>
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/slubne/wystroj.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="300"
+                        height="300"
+                    />
+                    <div class="box box-wystroj" data-astro-cid-ivdev4kk="">
+                        <button class="btn-modal" onclick="window.wystroj.showModal()" data-astro-cid-qmzm2soj="">
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="wystroj" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/3.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/4.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/5.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/6.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/7.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/8.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/9.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/10.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/11.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/12.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/13.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/14.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/15.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/16.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/17.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/18.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/19.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/20.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/21.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/22.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/23.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/24.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/25.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/26.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/27.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/28.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wystroj-sal/29.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section1.cards[1]}</h3>
+            </div>
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/slubne/wianki.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="300"
+                        height="300"
+                    />
+                    <div class="box box-wianki" data-astro-cid-ivdev4kk="">
+                        <button class="btn-modal" onclick="window.wianki.showModal()" data-astro-cid-qmzm2soj="">
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="wianki" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wianki-z-zywych-kwiatow/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wianki-z-zywych-kwiatow/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/wianki-z-zywych-kwiatow/3.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section1.cards[2]}</h3>
+            </div>
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/slubne/wianki-dla-zwierzat.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="300"
+                        height="300"
+                    />
+                    <div class="box box-wiankidlazwierzat" data-astro-cid-ivdev4kk="">
+                        <button
+                            class="btn-modal"
+                            onclick="window.wiankidlazwierzat.showModal()"
+                            data-astro-cid-qmzm2soj=""
+                        >
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="wiankidlazwierzat" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/ozdoby-wianki-dla-zwierzat/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/ozdoby-wianki-dla-zwierzat/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/dekoracje-slubne/ozdoby-wianki-dla-zwierzat/3.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section1.cards[3]}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="offer" data-astro-cid-ivdev4kk="">
+        <div class="wrapper-container" data-astro-cid-ivdev4kk="">
+            <div class="wrapper" data-astro-cid-ivdev4kk="">
+                <h3 data-astro-cid-ivdev4kk="">
+                    <span data-astro-cid-ivdev4kk="">{section2.numeral}</span>
+                    {section2.heading}
+                </h3>
+                <p data-astro-cid-ivdev4kk="">{section2.body}</p>
+                <p data-astro-cid-ivdev4kk="">{section2.priceNote}</p>
+            </div>
+            <div class="wrapper-image" data-astro-cid-ivdev4kk="">
+                <div class="card" data-astro-cid-ivdev4kk="">
+                    <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                        <img
+                            src="/ringi/ringi-wience-serca.jpg"
+                            decoding="async"
+                            loading="lazy"
+                            alt=""
+                            data-astro-cid-ivdev4kk=""
+                            width="700"
+                            height="700"
+                            style="min-height: 300px;"
+                        />
+                        <div class="box box-ringi" data-astro-cid-ivdev4kk="">
+                            <button class="btn-modal" onclick="window.ringi.showModal()" data-astro-cid-qmzm2soj="">
+                                {mainCopy.viewPhotos}
+                            </button>
+                            <dialog id="ringi" data-astro-cid-qmzm2soj="">
+                                <article data-astro-cid-ivdev4kk="">
+                                    <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                        <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/1.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/2.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/3.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/4.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/5.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/6.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/7.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/8.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/9.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/10.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/11.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/12.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/13.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/14.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/15.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/16.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/17.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/18.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/19.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/20.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img src="/galeria/ringi/21.jpg" alt="" data-astro-cid-ivdev4kk="" />
+                                            </div>
+                                        </div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                        <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                    </div>
+                                </article>
+                                <form method="dialog" data-astro-cid-qmzm2soj="">
+                                    <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offer" data-astro-cid-ivdev4kk="">
+        <div class="wrapper-container" data-astro-cid-ivdev4kk="">
+            <div class="wrapper" data-astro-cid-ivdev4kk="">
+                <h3 data-astro-cid-ivdev4kk="">
+                    <span data-astro-cid-ivdev4kk="">{section3.numeral}</span>
+                    {section3.heading}
+                </h3>
+                <p data-astro-cid-ivdev4kk="">{section3.body}</p>
+                <p data-astro-cid-ivdev4kk="">{section3.priceNote}</p>
+            </div>
+            <div class="wrapper-image" data-astro-cid-ivdev4kk="">
+                <img
+                    src="/wiazki/wiazki.jpg"
+                    decoding="async"
+                    loading="lazy"
+                    alt=""
+                    data-astro-cid-ivdev4kk=""
+                    width="700"
+                    height="700"
+                />
+            </div>
+        </div>
+        <div class="card-wrapper-3-elems" data-astro-cid-ivdev4kk="">
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/wiazki/wience.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="500"
+                        height="300"
+                    />
+                    <div class="box box-wience1" data-astro-cid-ivdev4kk="">
+                        <button class="btn-modal" onclick="window.wience1.showModal()" data-astro-cid-qmzm2soj="">
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="wience1" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/3.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/4.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/5.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/6.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/7.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/8.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/9.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/10.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/11.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/12.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/13.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/14.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/wiazanki-pogrzebowe/15.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section3.cards[0]}</h3>
+            </div>
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/wiazki/serca-lub-krzyze.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="500"
+                        height="300"
+                    />
+                    <div class="box box-sercalubkrzyze" data-astro-cid-ivdev4kk="">
+                        <button
+                            class="btn-modal"
+                            onclick="window.sercalubkrzyze.showModal()"
+                            data-astro-cid-qmzm2soj=""
+                        >
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="sercalubkrzyze" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/serca-kwiatowe/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/serca-kwiatowe/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section3.cards[1]}</h3>
+            </div>
+            <div class="card" data-astro-cid-ivdev4kk="">
+                <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                    <img
+                        src="/wiazki/aranzacje.jpg"
+                        decoding="async"
+                        loading="lazy"
+                        class="card-img"
+                        alt=""
+                        data-astro-cid-ivdev4kk=""
+                        width="500"
+                        height="300"
+                    />
+                    <div class="box box-aranzacjenatrumne" data-astro-cid-ivdev4kk="">
+                        <button
+                            class="btn-modal"
+                            onclick="window.aranzacjenatrumne.showModal()"
+                            data-astro-cid-qmzm2soj=""
+                        >
+                            {mainCopy.viewPhotos}
+                        </button>
+                        <dialog id="aranzacjenatrumne" data-astro-cid-qmzm2soj="">
+                            <article data-astro-cid-ivdev4kk="">
+                                <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                    <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/aranzacje-na-trumne/1.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                        <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                            <img
+                                                src="/galeria/wiazanki-pogrzebowe/aranzacje-na-trumne/2.jpg"
+                                                alt=""
+                                                data-astro-cid-ivdev4kk=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                    <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                </div>
+                            </article>
+                            <form method="dialog" data-astro-cid-qmzm2soj="">
+                                <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <h3 data-astro-cid-ivdev4kk="">{section3.cards[2]}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="offer" data-astro-cid-ivdev4kk="">
+        <div class="wrapper-container" data-astro-cid-ivdev4kk="">
+            <div class="wrapper" data-astro-cid-ivdev4kk="">
+                <h3 data-astro-cid-ivdev4kk="">
+                    <span data-astro-cid-ivdev4kk="">{section4.numeral}</span>
+                    {section4.heading}
+                </h3>
+                <p data-astro-cid-ivdev4kk="">{section4.body}</p>
+                <ul data-astro-cid-ivdev4kk="">
+                    {section4.list.map((item) => (
+                        <li data-astro-cid-ivdev4kk="">{item}</li>
+                    ))}
+                </ul>
+            </div>
+            <div class="wrapper-image" data-astro-cid-ivdev4kk="">
+                <div class="card" data-astro-cid-ivdev4kk="">
+                    <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                        <img
+                            src="/pozostale.jpg"
+                            decoding="async"
+                            loading="lazy"
+                            alt=""
+                            data-astro-cid-ivdev4kk=""
+                            width="700"
+                            height="500"
+                        />
+                        <div class="box box-pozostale" data-astro-cid-ivdev4kk="">
+                            <button class="btn-modal" onclick="window.pozostale.showModal()" data-astro-cid-qmzm2soj="">
+                                {mainCopy.viewPhotos}
+                            </button>
+                            <dialog id="pozostale" data-astro-cid-qmzm2soj="">
+                                <article data-astro-cid-ivdev4kk="">
+                                    <div class="swiper swiper-horizontal" data-astro-cid-ivdev4kk="">
+                                        <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/1.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/2.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/3.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/4.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/5.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/6.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/7.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/8.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/9.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/10.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/11.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/12.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/13.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/14.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/15.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/16.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/17.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/18.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/19.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/20.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/21.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/22.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/23.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/24.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/25.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/26.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/27.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/28.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/29.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/30.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/31.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/pozostale-dekoracje/32.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                        <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                    </div>
+                                </article>
+                                <form method="dialog" data-astro-cid-qmzm2soj="">
+                                    <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offer boze-narodzenie" data-astro-cid-ivdev4kk="">
+        <div class="wrapper-container" data-astro-cid-ivdev4kk="">
+            <div class="wrapper" data-astro-cid-ivdev4kk="">
+                <h3 data-astro-cid-ivdev4kk="">
+                    <span data-astro-cid-ivdev4kk="">V</span> {mainCopy.christmas.heading}
+                </h3>
+                <p data-astro-cid-ivdev4kk="">{mainCopy.christmas.body}</p>
+            </div>
+            <div class="wrapper-image" data-astro-cid-ivdev4kk="">
+                <div class="card" data-astro-cid-ivdev4kk="">
+                    <div class="card-img-wrapper" data-astro-cid-ivdev4kk="">
+                        <img
+                            src="/galeria/swieta-bozego-nardzenia/7.jpg"
+                            decoding="async"
+                            loading="lazy"
+                            alt=""
+                            data-astro-cid-ivdev4kk=""
+                            width="700"
+                            height="700"
+                            class="boze-nardzenie-img"
+                        />
+                        <div class="box box-wielkanoc" data-astro-cid-ivdev4kk="">
+                            <button class="btn-modal" onclick="window.wielkanoc.showModal()" data-astro-cid-qmzm2soj="">
+                                {mainCopy.viewPhotos}
+                            </button>
+                            <dialog id="wielkanoc" data-astro-cid-qmzm2soj="">
+                                <article data-astro-cid-ivdev4kk="">
+                                    <div class="swiper" data-astro-cid-ivdev4kk="">
+                                        <div class="swiper-wrapper" data-astro-cid-ivdev4kk="">
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/1.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/2.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/3.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/4.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/5.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/6.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/7.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/8.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/9.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/10.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/11.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/12.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/13.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/14.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/15.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/16.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/17.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/18.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/19.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/20.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/21.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/22.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                            <div data-lg-size="200-200" class="swiper-slide" data-astro-cid-ivdev4kk="">
+                                                <img
+                                                    src="/galeria/swieta-bozego-nardzenia/23.jpg"
+                                                    alt=""
+                                                    data-astro-cid-ivdev4kk=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev" data-astro-cid-ivdev4kk=""></div>
+                                        <div class="swiper-button-next" data-astro-cid-ivdev4kk=""></div>
+                                    </div>
+                                </article>
+                                <form method="dialog" data-astro-cid-qmzm2soj="">
+                                    <button class="close-button" data-astro-cid-ivdev4kk="">X</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrapper" data-astro-cid-ivdev4kk="">
+        <button class="btn btn-white" onclick="window.kontaktowy2.showModal()" data-astro-cid-fziqq5va="">
+            {copy.hero.contactCta}
+        </button>
+        <dialog id="kontaktowy2" data-astro-cid-fziqq5va="">
+            <div data-astro-cid-ivdev4kk="">
+                <div class="wrapper-form" data-astro-cid-ivdev4kk="">
+                    <div class="phone-wrapper" data-astro-cid-ivdev4kk="">
+                        <h3 data-astro-cid-ivdev4kk="">{contactForm.phoneHeading}</h3>
+                        <hr data-astro-cid-ivdev4kk="" />
+                        <a href="tel:+48501744994" class="phone" data-astro-cid-ivdev4kk="">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="42"
+                                height="42"
+                                viewBox="0 0 42 42"
+                                fill="white"
+                                data-astro-cid-ivdev4kk=""
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0H8.744C10.464 0 11.964 1.172 12.382 2.84L14.592 11.686C14.7711 12.402 14.7349 13.1549 14.488 13.8504C14.2411 14.546 13.7945 15.1532 13.204 15.596L10.618 17.536C10.348 17.738 10.29 18.034 10.366 18.24C11.4948 21.3097 13.2772 24.0974 15.5899 26.4101C17.9026 28.7228 20.6903 30.5052 23.76 31.634C23.966 31.71 24.26 31.652 24.464 31.382L26.404 28.796C26.8468 28.2055 27.454 27.7589 28.1496 27.512C28.8451 27.2651 29.598 27.2289 30.314 27.408L39.16 29.618C40.828 30.036 42 31.536 42 33.258V36C42 37.5913 41.3679 39.1174 40.2426 40.2426C39.1174 41.3679 37.5913 42 36 42H31.5C14.104 42 0 27.896 0 10.5V6Z"
+                                    fill="#FFF"
+                                    data-astro-cid-ivdev4kk=""
+                                >
+                                </path>
+                            </svg>
+                            <span data-astro-cid-ivdev4kk="">{contactForm.phoneCta}</span>
+                        </a>
+                    </div>
+                    <div class="form-wrapper" data-astro-cid-ivdev4kk="">
+                        <h3 data-astro-cid-ivdev4kk="">{contactForm.formHeading}</h3>
+                        <form
+                            target="_blank"
+                            action="https://formsubmit.co/panikwiat@gmail.com"
+                            method="POST"
+                            data-astro-reload=""
+                            data-astro-cid-ivdev4kk=""
+                        >
+                            <div class="form-group" data-astro-cid-ivdev4kk="">
+                                <div class="form-row" data-astro-cid-ivdev4kk="">
+                                    <div class="col" data-astro-cid-ivdev4kk="">
+                                        <label data-astro-cid-ivdev4kk="">{contactForm.nameLabel}</label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form-control"
+                                            placeholder={contactForm.namePlaceholder}
+                                            required=""
+                                            data-astro-cid-ivdev4kk=""
+                                        />
+                                    </div>
+                                    <div class="col" data-astro-cid-ivdev4kk="">
+                                        <label data-astro-cid-ivdev4kk="">{contactForm.phoneLabel}</label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form-control"
+                                            placeholder={contactForm.phonePlaceholder}
+                                            required=""
+                                            data-astro-cid-ivdev4kk=""
+                                        />
+                                    </div>
+                                    <div class="col" data-astro-cid-ivdev4kk="">
+                                        <label data-astro-cid-ivdev4kk="">{contactForm.emailLabel}</label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            class="form-control"
+                                            placeholder={contactForm.emailPlaceholder}
+                                            required=""
+                                            data-astro-cid-ivdev4kk=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" data-astro-cid-ivdev4kk="">
+                                <label data-astro-cid-ivdev4kk="">{contactForm.messageLabel}</label>
+                                <textarea
+                                    placeholder={contactForm.messagePlaceholder}
+                                    class="form-control"
+                                    name="Wiadomość: *"
+                                    rows="6"
+                                    required=""
+                                    data-astro-cid-ivdev4kk=""
+                                >
+                                </textarea>
+                            </div>
+                            <input type="text" name="_honey" style="display:none" data-astro-cid-ivdev4kk="" />
+                            <input type="hidden" name="_next" value="https://panikwiat.pl" data-astro-cid-ivdev4kk="" />
+                            <input type="hidden" name="_captcha" value="false" data-astro-cid-ivdev4kk="" />
+                            <div class="btn-form-wrapper" data-astro-cid-ivdev4kk="">
+                                <div data-astro-cid-ivdev4kk="">
+                                    <input
+                                        type="checkbox"
+                                        id="rodo"
+                                        name="rodo"
+                                        value="Boat"
+                                        data-astro-cid-ivdev4kk=""
+                                    />
+                                    <label for="rodo" data-astro-cid-ivdev4kk="">{contactForm.consent}</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-astro-cid-ivdev4kk="">
+                                    {contactForm.submit}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <form method="dialog" data-astro-cid-fziqq5va="">
+                <button class="close-button-form" data-astro-cid-ivdev4kk="">X</button>
+            </form>
+        </dialog>
+    </div>
+</div>
+
+<script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
+    console.log(Swiper);
+
+    addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".swiper", {
+            direction: "horizontal",
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+        });
+    });
+</script>

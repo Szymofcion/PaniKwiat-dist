@@ -1,0 +1,20 @@
+---
+import { normalizeLang, siteCopy, type SiteLang } from "../i18n/site";
+
+const lang = normalizeLang(Astro.props.lang as SiteLang);
+const copy = siteCopy[lang].opinion;
+---
+
+<section class="opinion-section" id="opinie" data-astro-cid-jveos4p6="">
+    <div class="container" data-astro-cid-jveos4p6="">
+        <h2 data-astro-cid-jveos4p6="">{copy.heading}</h2>
+        <div class="opinions-wrapper" data-astro-cid-jveos4p6="">
+            {copy.items.map((item, index) => (
+                <div class={`opinion div${index + 1}`} data-astro-cid-jveos4p6="">
+                    <h6 data-astro-cid-jveos4p6="">{item.author}</h6>
+                    <p data-astro-cid-jveos4p6="">{item.text}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

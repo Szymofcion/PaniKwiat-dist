@@ -1,0 +1,192 @@
+---
+import { normalizeLang, siteCopy, type SiteLang } from "../i18n/site";
+
+const lang = normalizeLang(Astro.props.lang as SiteLang);
+const copy = siteCopy[lang];
+const { contactForm } = copy;
+---
+
+<section class="hero" data-astro-cid-bbe6dxrz="">
+    <div class="container" data-astro-cid-bbe6dxrz="">
+        <div class="hero-wrapper" data-astro-cid-bbe6dxrz="">
+            <div class="top-wrapper" data-astro-cid-bbe6dxrz="">
+                <h1 data-astro-cid-bbe6dxrz="">{copy.hero.heading}</h1>
+                <hr data-astro-cid-bbe6dxrz="" />
+                <p data-astro-cid-bbe6dxrz="">{copy.hero.paragraph}</p>
+            </div>
+            <div class="bottom-wrapper" data-astro-cid-bbe6dxrz="">
+                <button class="btn btn-white" onclick="window.kontaktowy.showModal()" data-astro-cid-fziqq5va="">
+                    {copy.hero.contactCta}
+                </button>
+                <dialog id="kontaktowy" data-astro-cid-fziqq5va="">
+                    <div data-astro-cid-bbe6dxrz="">
+                        <div class="wrapper-form" data-astro-cid-bbe6dxrz="">
+                            <div class="phone-wrapper" data-astro-cid-bbe6dxrz="">
+                                <h3 data-astro-cid-bbe6dxrz="">{contactForm.phoneHeading}</h3>
+                                <hr data-astro-cid-bbe6dxrz="" />
+                                <a href="tel:+48501744994" class="phone" data-astro-cid-bbe6dxrz="">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="42"
+                                        height="42"
+                                        viewBox="0 0 42 42"
+                                        fill="white"
+                                        data-astro-cid-bbe6dxrz=""
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0 6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0H8.744C10.464 0 11.964 1.172 12.382 2.84L14.592 11.686C14.7711 12.402 14.7349 13.1549 14.488 13.8504C14.2411 14.546 13.7945 15.1532 13.204 15.596L10.618 17.536C10.348 17.738 10.29 18.034 10.366 18.24C11.4948 21.3097 13.2772 24.0974 15.5899 26.4101C17.9026 28.7228 20.6903 30.5052 23.76 31.634C23.966 31.71 24.26 31.652 24.464 31.382L26.404 28.796C26.8468 28.2055 27.454 27.7589 28.1496 27.512C28.8451 27.2651 29.598 27.2289 30.314 27.408L39.16 29.618C40.828 30.036 42 31.536 42 33.258V36C42 37.5913 41.3679 39.1174 40.2426 40.2426C39.1174 41.3679 37.5913 42 36 42H31.5C14.104 42 0 27.896 0 10.5V6Z"
+                                            fill="#FFF"
+                                            data-astro-cid-bbe6dxrz=""
+                                        >
+                                        </path>
+                                    </svg>
+                                    <span data-astro-cid-bbe6dxrz="">{contactForm.phoneCta}</span>
+                                </a>
+                            </div>
+                            <div class="form-wrapper" data-astro-cid-bbe6dxrz="">
+                                <h3 data-astro-cid-bbe6dxrz="">{contactForm.formHeading}</h3>
+                                <form
+                                    target="_blank"
+                                    action="https://formsubmit.co/panikwiat@gmail.com"
+                                    method="POST"
+                                    data-astro-reload=""
+                                    data-astro-cid-bbe6dxrz=""
+                                >
+                                    <div class="form-group" data-astro-cid-bbe6dxrz="">
+                                        <div class="form-row" data-astro-cid-bbe6dxrz="">
+                                            <div class="col" data-astro-cid-bbe6dxrz="">
+                                                <label data-astro-cid-bbe6dxrz="">{contactForm.nameLabel}</label>
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    class="form-control"
+                                                    placeholder={contactForm.namePlaceholder}
+                                                    required=""
+                                                    data-astro-cid-bbe6dxrz=""
+                                                />
+                                            </div>
+                                            <div class="col" data-astro-cid-bbe6dxrz="">
+                                                <label data-astro-cid-bbe6dxrz="">{contactForm.phoneLabel}</label>
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    class="form-control"
+                                                    placeholder={contactForm.phonePlaceholder}
+                                                    required=""
+                                                    data-astro-cid-bbe6dxrz=""
+                                                />
+                                            </div>
+                                            <div class="col" data-astro-cid-bbe6dxrz="">
+                                                <label data-astro-cid-bbe6dxrz="">{contactForm.emailLabel}</label>
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    class="form-control"
+                                                    placeholder={contactForm.emailPlaceholder}
+                                                    required=""
+                                                    data-astro-cid-bbe6dxrz=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" data-astro-cid-bbe6dxrz="">
+                                        <label data-astro-cid-bbe6dxrz="">{contactForm.messageLabel}</label>
+                                        <textarea
+                                            placeholder={contactForm.messagePlaceholder}
+                                            class="form-control"
+                                            name="Wiadomość: *"
+                                            rows="6"
+                                            required=""
+                                            data-astro-cid-bbe6dxrz=""
+                                        >
+                                        </textarea>
+                                    </div>
+                                    <input type="text" name="_honey" style="display:none" data-astro-cid-bbe6dxrz="" />
+                                    <input
+                                        type="hidden"
+                                        name="_next"
+                                        value="https://panikwiat.pl"
+                                        data-astro-cid-bbe6dxrz=""
+                                    />
+                                    <input type="hidden" name="_captcha" value="false" data-astro-cid-bbe6dxrz="" />
+                                    <div class="btn-form-wrapper" data-astro-cid-bbe6dxrz="">
+                                        <div data-astro-cid-bbe6dxrz="">
+                                            <input
+                                                type="checkbox"
+                                                id="rodo"
+                                                name="rodo"
+                                                value="Boat"
+                                                data-astro-cid-bbe6dxrz=""
+                                            />
+                                            <label for="rodo" data-astro-cid-bbe6dxrz="">
+                                                {contactForm.consent}
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" data-astro-cid-bbe6dxrz="">
+                                            {contactForm.submit}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="dialog" data-astro-cid-fziqq5va="">
+                        <button class="close-button-form" data-astro-cid-bbe6dxrz="">X</button>
+                    </form>
+                </dialog>
+                <a
+                    href="https://www.facebook.com/marketplace/profile/100058801496320/?ref=permalink"
+                    target="_blank"
+                    class="btn btn-white-outline"
+                    data-astro-cid-bbe6dxrz=""
+                >
+                    {copy.hero.readyCta}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-astro-cid-bbe6dxrz="">
+    <div class="container" data-astro-cid-bbe6dxrz="">
+        <div class="arrow-wrapper" data-astro-cid-bbe6dxrz="">
+            <a href="#discamler" data-astro-cid-bbe6dxrz="">
+                <span data-astro-cid-bbe6dxrz="">{copy.hero.learnMore}</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="216"
+                    height="212"
+                    viewBox="0 0 216 212"
+                    fill="none"
+                    data-astro-cid-bbe6dxrz=""
+                >
+                    <line
+                        class="line-down"
+                        x1="7"
+                        y1="211.5"
+                        x2="216"
+                        y2="211.5"
+                        stroke="#8CAE6B"
+                        data-astro-cid-bbe6dxrz=""
+                    >
+                    </line>
+                    <circle
+                        cx="6.5"
+                        cy="6.5"
+                        r="6"
+                        transform="rotate(90 6.5 6.5)"
+                        stroke="white"
+                        data-astro-cid-bbe6dxrz=""
+                    >
+                    </circle>
+                    <line x1="6.5" y1="13" x2="6.5" y2="80" stroke="white" data-astro-cid-bbe6dxrz=""></line>
+                    <line x1="6.5" y1="212" x2="6.49999" y2="80" stroke="#8CAE6B" data-astro-cid-bbe6dxrz=""></line>
+                </svg>
+            </a>
+        </div>
+        <h3 class="hero-discamler" id="discamler" data-astro-cid-bbe6dxrz="">
+            {copy.hero.disclaimer}
+        </h3>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+---
+import "../styles/style.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+    canonical?: string;
+    lang?: string;
+}
+
+const {
+    title = "Pani Kwiat – odkryj piękno i energię drzemiące w kwiatach",
+    description = "Kwiaty przeobrażają w pachnący ogród każde miejsce swoją obecnością, kolorem, zapachem i formą wyczarowaną ręką artysty.",
+    canonical = new URL(Astro.url).origin + Astro.url.pathname,
+    lang = "pl",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=DM+Serif+Display&family=DM+Serif+Text&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
+            integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
